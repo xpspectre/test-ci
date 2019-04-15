@@ -1,2 +1,1 @@
 PyInstaller==3.4
-wheel==0.33.1

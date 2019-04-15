@@ -10,5 +10,8 @@ source venv/bin/activate
 # Show python version check
 python  --version
 
+# Install wheel, which is may be missing from virtualenv
+pip install wheel
+
 # Install requirements
 pip install -r requirements.txt
