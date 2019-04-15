@@ -22,10 +22,4 @@ python -m unittest
 # Make PyPI package
 python setup.py bdist_wheel
 
-# Build
-echo "Building Linux app..."
-pyinstaller --clean -y test_ci/run.py
-
-# Package
-echo "Building archive..."
-tar -C dist -zcvf dist/run_test_ci.tar.gz run
+# Linux does not require a packaged app
