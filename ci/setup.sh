@@ -2,7 +2,7 @@
 # Setup environment
 
 # Create virtualenv for project in root dir
-/opt/miniconda/bin/python -m venv venv
+python3.7 -m venv venv
 
 # Activate env
 source venv/bin/activate
