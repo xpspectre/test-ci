@@ -5,4 +5,4 @@
 source venv/bin/activate
 
 # Show python version check
-python setup.py sdist bdist wheel
+python setup.py sdist bdist_wheel
