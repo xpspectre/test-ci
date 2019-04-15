@@ -7,5 +7,8 @@ python3.7 -m venv venv
 # Activate env
 source venv/bin/activate
 
+# Show python version check
+python  --version
+
 # Install requirements
 pip install -r requirements.txt
