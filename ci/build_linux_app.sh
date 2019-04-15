@@ -5,6 +5,7 @@
 source venv/bin/activate
 
 # Build
+echo "Building Linux app..."
 pyinstaller --clean -y test_ci/run.py
 
 # Package
@@ -12,4 +13,5 @@ pyinstaller --clean -y test_ci/run.py
 #       For Windows, use NSIS or similar
 #   For now, just tar gz it
 #       For Windows, zip it
-tar -zcvf dist/run_test_ci.tar.gz dist/run
+echo "Building archive..."
+tar -C dist -zcvf dist/run_test_ci.tar.gz run
