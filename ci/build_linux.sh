@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Setup environment
+# Setup environment, test, build, and package
 
 # Create virtualenv for project in root dir
 python3.7 -m venv venv
@@ -15,3 +15,17 @@ pip install wheel
 
 # Install requirements
 pip install -r requirements.txt
+
+# Run tests in tests/ dir
+python -m unittest
+
+# Make PyPI package
+python setup.py bdist_wheel
+
+# Build
+echo "Building Linux app..."
+pyinstaller --clean -y test_ci/run.py
+
+# Package
+echo "Building archive..."
+tar -C dist -zcvf dist/run_test_ci.tar.gz run
