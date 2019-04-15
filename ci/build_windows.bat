@@ -4,7 +4,8 @@
 python -m venv venv
 
 :: Activate env
-venv\Scripts\activate.bat
+::  Must do this to call bat in bat
+call venv\Scripts\activate.bat
 
 :: Show python version check
 python  --version
