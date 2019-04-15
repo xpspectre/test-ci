@@ -26,4 +26,4 @@ python setup.py bdist_wheel
 pyinstaller --clean -y test_ci\run.py
 
 :: Package
-7z a dist\run_test_ci.zip .\test_ci\dist\run\*
+7z a dist\run_test_ci.zip .\dist\run\*
