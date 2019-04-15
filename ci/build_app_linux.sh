@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 # Build deployable Linux app with PyInstaller
 
+# Activate env
+source venv/bin/activate
+
+
 # Build
 echo "Building Linux app..."
 pyinstaller --clean -y test_ci/run.py
